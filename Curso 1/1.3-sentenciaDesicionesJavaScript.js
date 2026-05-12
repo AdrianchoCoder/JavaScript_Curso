@@ -42,7 +42,7 @@ else{
     console.log(`Lo siento, revisa que el dato ingresado sea numerico o Positivo.`);
 }
 
-// Ejemplo Dia de la Semana
+// Ejemplo Dia de la Semana con if - else if - else
 let diaSemana = 'Sabado';
 if (diaSemana == 'Lunes'){
     console.log(`El dia de hoy es: ${diaSemana}`);
@@ -67,4 +67,33 @@ else if (diaSemana == 'Domingo'){
 }
 else{
     console.log('Verifica que sea uno de los dias de la semana');
+}
+
+// Ejemplo Dias de la Semana con Switch
+let diaDeLaSemana = 8;
+switch (diaDeLaSemana) {
+    case 1:
+        console.log('Hoy es Lunes')
+        break;
+    case 2:
+        console.log('Hoy es Martes')
+        break;
+    case 3:
+        console.log('Hoy es Miercoles')
+        break;
+    case 4:
+        console.log('Hoy es Jueves')
+        break;
+    case 5:
+        console.log('Hoy es Viernes')
+        break;
+    case 6:
+        console.log('Hoy es Sabado')
+        break;
+    case 7:
+        console.log('Hoy es Domingo')
+        break;
+    default:
+        console.log('Por favor, verifica un dia de la semana del 1 al 7...')
+        break;
 }
