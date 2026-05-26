@@ -34,5 +34,16 @@ for(let i = 1; i <= condicionRepeticion; i++){
     console.log(`Los Numeros son: ${i}`);
     sumaAcumulativa = sumaAcumulativa + i;
     console.log(sumaAcumulativa)
-}
+};
 console.log(`El total de la Suma Acumulativa es: ${sumaAcumulativa}`);
+
+// Ejercicio Acumular Suma --> Realizar suma de los primeros 5 numeros utilizando While
+let numero = 1;
+let sumaAcumulativaWhile = 0;
+while(numero <= condicionRepeticion){
+    console.log(`Los Numeros son: ${numero}`);
+    sumaAcumulativaWhile = sumaAcumulativaWhile + numero;
+    console.log(`Los Numeros Tras la Sumas son: ${sumaAcumulativaWhile}`)
+    numero += 1;
+};
+console.log(`El resultado Final de la suma acumulativa es: ${sumaAcumulativaWhile}`)
