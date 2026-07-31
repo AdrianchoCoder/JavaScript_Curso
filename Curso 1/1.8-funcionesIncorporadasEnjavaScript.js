@@ -42,4 +42,12 @@ let valorAbsoluto = Math.abs(num);
 console.log(valorAbsoluto);
 
 // Round y Truncado en Js
-let numero = 10.5, 
+
+// Round: Redondea el valor entero mas cercano con ( Math.round() ), .5 o superior redondea al valor entero superior mas cercano.
+let numero= 8.5, redondeo, truncado;
+redondeo = Math.round(numero);
+console.log(redondeo);
+
+// Truncado: Elimina la Parte Flotante ( decimal ).
+truncado = Math.trunc(numero);
+console.log(truncado);
