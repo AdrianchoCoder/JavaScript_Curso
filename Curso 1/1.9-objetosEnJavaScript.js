@@ -99,13 +99,13 @@ let persona4 = {
     nombre: 'Adrian',
     apellido: 'Jaimes',
     telefono: 3195939437,
-    edad: 19,
+    edad: -1,
 
     // Get y set
     get obtenerInformacionUsuario(){
-        return `Hola soy: ${this.nombre} ${this.apellido}, tengo ${this.edad} y mi numero de telefono es: ${this.telefono}`;
+        console.log(`Hola soy: ${this.nombre} ${this.apellido}, tengo ${this.edad} y mi numero de telefono es: ${this.telefono}`);
     },
-    set modificarInformacionUsuario(nombre, apellido, telefono){
+    modificarInformacionUsuario(nombre, apellido, telefono){ // Este es un metodo normal debido a que " set " usa mejor en propiedades individuales o valores calculados, no se utilizan para varios atributos a la vez.
         this.nombre = nombre;
         this.apellido = apellido;
         this.telefono = telefono;
@@ -122,4 +122,6 @@ let persona4 = {
 
 //Terminar
 
-console.log(persona4.obtenerInformacionUsuario);
+persona4.obtenerInformacionUsuario;
+persona4.modificarInformacionUsuario('Andres', 'Aguirre', 3195939435);
+persona4.modificarEdadUsuarioConValidacion = 0; // Los " Sets ", se utilizan con signos de asignacion pra comprobar que los parametros, metodos y propiedades si funcionen.
